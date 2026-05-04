@@ -1,0 +1,334 @@
+.about-section {
+  background: #0a0a0f;
+}
+
+/* Section header */
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  padding: 0.375rem 1rem;
+  background: rgba(102, 126, 234, 0.08);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 9999px;
+}
+
+.about-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+/* Bio card */
+.about-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: rgba(18, 18, 26, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-image-container {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1.5rem;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-image-border {
+  position: absolute;
+  inset: -3px;
+  border-radius: 1.4rem;
+  background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.about-info {
+  margin-bottom: 1.25rem;
+}
+
+.about-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.25rem;
+}
+
+.about-role {
+  font-size: 0.95rem;
+  color: #667eea;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+
+.about-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  font-size: 0.8rem;
+  color: #71717a;
+  margin: 0;
+}
+
+.about-bio {
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  line-height: 1.75;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+.about-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(102, 126, 234, 0.08);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 9999px;
+  color: #a1a1aa;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.social-btn:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.35);
+  color: #667eea;
+  transform: translateY(-1px);
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(18, 18, 26, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #667eea;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #71717a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(102, 126, 234, 0.15);
+}
+
+/* Timeline */
+.about-timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-section {
+  background: rgba(18, 18, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+/* Timeline items */
+.timeline {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, #667eea, rgba(102, 126, 234, 0.1));
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.05rem;
+  top: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #667eea;
+  border: 2px solid #0a0a0f;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+.timeline-content {
+  background: rgba(26, 26, 36, 0.5);
+  border: 1px solid rgba(102, 126, 234, 0.08);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.timeline-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.timeline-date {
+  font-size: 0.7rem;
+  color: #71717a;
+  white-space: nowrap;
+  padding: 0.2rem 0.5rem;
+  background: rgba(102, 126, 234, 0.08);
+  border-radius: 9999px;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #667eea;
+  margin: 0 0 0.75rem;
+  font-weight: 500;
+}
+
+.timeline-description {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.tech-badge {
+  padding: 0.2rem 0.6rem;
+  background: rgba(102, 126, 234, 0.08);
+  border: 1px solid rgba(102, 126, 234, 0.12);
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.about-skeleton {
+  height: 500px;
+  background: #12121a;
+  border-radius: 1.5rem;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

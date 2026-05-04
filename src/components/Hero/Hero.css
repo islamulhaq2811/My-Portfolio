@@ -1,0 +1,67 @@
+/* Hero Section Styles */
+
+/* Entrance animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Staggered entrance animations */
+.hero-title {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.hero-subtitle {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out 0.15s forwards;
+}
+
+.hero-description {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out 0.3s forwards;
+}
+
+.hero-ctas {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out 0.45s forwards;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .hero-title,
+  .hero-subtitle,
+  .hero-description,
+  .hero-ctas {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Profile image hover effect */
+.profile-image-container {
+  transition: transform 0.3s ease;
+}
+
+.profile-image-container:hover {
+  transform: scale(1.02);
+}
+
+/* Focus styles */
+#hero:focus {
+  outline: none;
+}
